@@ -15,8 +15,12 @@ else{
 result1 = +firstNumber + +secondNumber;
 alert(`Сума: ${result1}`);
 
-if (secondNumber > firstNumber) {
-    alert("Ви впевнені, що хочете продовжити операцію");
+if (secondNumber < firstNumber) {
+    alert("Ви впевнені, що хочете продовжити операцію");   
+    result2 = +firstNumber - +secondNumber;
+    alert(`Різниця: ${result2}`);
+  }
+  else {
     result2 = +firstNumber - +secondNumber;
     alert(`Різниця: ${result2}`);
   }
