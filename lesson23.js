@@ -39,3 +39,56 @@ for (let i = 1; i <= 5; i++) {
   str += "#".repeat(i) + "\n";
 }
 console.log(str);
+
+
+function add(a, b) {
+  if (typeof a === "number" && typeof b === "number") {
+    return a + b;
+  } else {
+    return "Помилка: введіть числа";
+  }
+}
+
+function subtract(a, b) {
+  if (typeof a === "number" && typeof b === "number") {
+    return a - b;
+  } else {
+    return "Помилка: введіть числа";
+  }
+}
+
+function multiply(a, b) {
+  if (typeof a === "number" && typeof b === "number") {
+    return a * b;
+  } else {
+    return "Помилка: введіть числа";
+  }
+}
+
+function divide(a, b) {
+  if (typeof a === "number" && typeof b === "number" && b !== 0) {
+    return a / b;
+  } else {
+    return "Помилка: введіть числа та переконайтеся, що друге число не є нулем";
+  }
+}
+
+function findMin(arr) {
+  let min = Infinity;
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] === "number" && arr[i] < min) {
+      min = arr[i];
+    }
+  }
+  return min;
+}
+
+function findMax(arr) {
+  let max = -Infinity;
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] === "number" && arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  return max;
+}
